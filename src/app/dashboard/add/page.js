@@ -27,7 +27,7 @@ const AddTransaction = () => {
     });
 
     const apiRes = await res.json();
-    apiRes?.msg && reset();
+    // apiRes?.msg && reset();
     console.log({ apiRes });
   };
 
