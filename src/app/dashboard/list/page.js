@@ -7,9 +7,12 @@ const List = () => {
   const [transaction, setTransactionHistory] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/api/dashboard/list", {
-        method: "GET",
-      }).then((res) => res.json());
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_backend_url}/dashboard/list`,
+        {
+          method: "GET",
+        }
+      ).then((res) => res.json());
       console.log(res);
       setTransactionHistory(res?.data);
     };

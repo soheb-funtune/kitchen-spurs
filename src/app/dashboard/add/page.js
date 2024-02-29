@@ -17,17 +17,20 @@ const AddTransaction = () => {
   const submitForm = async (data) => {
     console.log({ data });
     // dispatch(transactionHistory({ ...data }));
-    const res = await fetch("http://localhost:3000/api/dashboard/add", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // 'API-Key': process.env.DATA_API_KEY!,
-      },
-      body: JSON.stringify(data),
-    });
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_backend_url}/dashboard/add`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // 'API-Key': process.env.DATA_API_KEY!,
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     const apiRes = await res.json();
-    // apiRes?.msg && reset();
+    apiRes?.msg && reset();
     console.log({ apiRes });
   };
 

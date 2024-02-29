@@ -8,9 +8,12 @@ export const Dashboard = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        let res = await fetch("http://localhost:3000/api/dashboard", {
-          method: "GET",
-        });
+        let res = await fetch(
+          `${process.env.NEXT_PUBLIC_backend_url}/dashboard`,
+          {
+            method: "GET",
+          }
+        );
         res = await res?.json();
         const [a, ...rest] = res?.data?.amountObj;
         setAreaChart(rest);
