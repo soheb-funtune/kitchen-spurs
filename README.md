@@ -1,3 +1,9 @@
+![dashboard-page](https://github.com/soheb-funtune/kitchen-spurs/assets/97585425/e47d697f-ef6b-4da9-b370-0c8e2731dd6e)
+
+![add-page](https://github.com/soheb-funtune/kitchen-spurs/assets/97585425/1f43abc4-c15c-45c1-9dde-6f65875c5b1e)
+
+![transaction-list](https://github.com/soheb-funtune/kitchen-spurs/assets/97585425/0341e2aa-1da6-484c-b6d6-40b199e0e40f)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
